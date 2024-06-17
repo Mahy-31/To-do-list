@@ -161,10 +161,10 @@ input::placeholder, textarea::placeholder {
   }
   .App .header h1 {
     margin: 10%;
-    font-size:40px;
+    font-size:25px;
   }
   .App .to-do-box {
-    width: 350px;
+    width: 300px;
     height: auto;
     margin: 7% 0 0 10%;
   }
