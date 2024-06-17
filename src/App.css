@@ -149,7 +149,87 @@ input::placeholder, textarea::placeholder {
   color: white;
 }
 
-
+@media only screen and (max-width: 480px) {
+  body {
+    height: 600px;
+  }
+  .App .header {
+    margin:4%;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+  }
+  .App .header h1 {
+    margin: 10%;
+    font-size:40px;
+  }
+  .App .to-do-box {
+    width: 350px;
+    height: auto;
+    margin: 7% 0 0 10%;
+  }
+  .App .to-do-box .form {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width:300px;
+    margin: 15% 0 0 10%;
+    padding-bottom: -20%;
+    border-bottom: 1px solid rgb(98, 99, 106);
+  }
+  .form label {
+    margin-top: 10%;
+    color: rgb(255, 255, 255);
+  }
+  
+  .form input {
+    height: 40px;
+    width: 240px;
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 1% 0 0 4%;
+    margin: 5% 0 4%;
+  }
+  .form .add-btn {
+    margin: 4% 0 10% 0;
+  }
+  .btn-area {
+    margin: 1% 0 3% 15%;
+  }
+  .todo-list-item {
+    width: 260px;
+    height: 80px;
+    margin: 2%;
+  }
+  .del-icon {
+    font-size: 30px;
+    color: rgb(164, 0, 0);
+  }
+  .tick-icon {
+    font-size: 30px;
+    color: rgb(0, 125, 39);
+  }
+  .tick-icon:hover {
+    font-size: 35px;
+    color: rgb(0, 204, 54);
+    cursor: pointer;
+  }
+  .del-icon:hover {
+    font-size: 35px;
+    cursor: pointer;
+    color: rgb(243, 24, 24);
+  }
+  .back-icon {
+    font-size: 25px;
+    color: rgb(233, 227, 227);
+  }
+  .back-icon:hover {
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+  }
+}
 
 
 
