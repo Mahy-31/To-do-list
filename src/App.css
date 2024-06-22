@@ -164,7 +164,7 @@ input::placeholder, textarea::placeholder {
     font-size:25px;
   }
   .App .to-do-box {
-    width: 300px;
+    width: 320px;
     height: auto;
     margin: 7% 0 0 10%;
   }
@@ -172,7 +172,7 @@ input::placeholder, textarea::placeholder {
     display: flex;
     flex-direction: column;
     height: 300px;
-    width:300px;
+    width:250px;
     margin: 15% 0 0 10%;
     padding-bottom: -20%;
     border-bottom: 1px solid rgb(98, 99, 106);
@@ -198,7 +198,7 @@ input::placeholder, textarea::placeholder {
     margin: 1% 0 3% 15%;
   }
   .todo-list-item {
-    width: 260px;
+    width: 250px;
     height: 80px;
     margin: 2%;
   }
