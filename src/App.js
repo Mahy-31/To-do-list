@@ -26,7 +26,7 @@ function App() {
 
   const deleteTodo = (index) => {
     let reducedTodo = [...allTodos];
-    reducedTodo.splice(index);
+    reducedTodo.splice(index,1);
     localStorage.setItem('todolist',JSON.stringify(reducedTodo));
     setTodos(reducedTodo);
   };
@@ -56,20 +56,16 @@ function App() {
 
   const deleteCompletedTodo  = (index) => {
     let reducedTodo = [...completedTodos];
-    reducedTodo.splice(index);
+    reducedTodo.splice(index,1);
     localStorage.setItem('completedTodos',JSON.stringify(reducedTodo));
     setCompletedTodos(reducedTodo);
   }
   const addBackTodo = (index) => {
-    let newAddTodoItem = {
-      title: newTitle,
-      description: newDescr
-    }
+    let newAddTodoItem = completedTodos[index];
 
-    let newUpdatedTodoArr = [...allTodos];
-    newUpdatedTodoArr.push(newAddTodoItem);
+    let newUpdatedTodoArr = [...allTodos, newAddTodoItem];
     setTodos(newUpdatedTodoArr);
-    localStorage.setItem('todolist',JSON.stringify(newUpdatedTodoArr));
+    localStorage.setItem('todolist', JSON.stringify(newUpdatedTodoArr));
     deleteCompletedTodo(index);
   }
 
